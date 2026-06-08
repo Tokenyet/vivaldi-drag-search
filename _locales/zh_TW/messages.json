@@ -1,0 +1,99 @@
+{
+  "extensionName": {
+    "message": "Vivaldi 拖放搜尋",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "在 Vivaldi UI 自動隱藏時，把選取文字或網址拖到頁面邊緣即可搜尋或前往。",
+    "description": "Short extension description."
+  },
+  "optionsTitle": {
+    "message": "Vivaldi 拖放搜尋選項",
+    "description": "Options page title and action tooltip."
+  },
+  "optionsHeaderDescription": {
+    "message": "把選取文字或 URL 拖到頁面邊緣，放開後搜尋或前往網址。",
+    "description": "Options page intro."
+  },
+  "sectionSearch": {
+    "message": "搜尋"
+  },
+  "searchModeLabel": {
+    "message": "搜尋方式"
+  },
+  "searchModeBrowser": {
+    "message": "使用瀏覽器預設搜尋引擎"
+  },
+  "searchModeTemplate": {
+    "message": "使用自訂搜尋 URL"
+  },
+  "searchTemplateLabel": {
+    "message": "自訂搜尋 URL"
+  },
+  "searchTemplateHint": {
+    "message": "自訂 URL 請用 <code>%s</code> 表示搜尋字串；瀏覽器搜尋 API 失敗時也會使用這個 URL。"
+  },
+  "sectionDropZone": {
+    "message": "拖放區"
+  },
+  "dropEdgeLabel": {
+    "message": "觸發邊緣"
+  },
+  "dropEdgeTop": {
+    "message": "上方"
+  },
+  "dropEdgeBottom": {
+    "message": "下方"
+  },
+  "dropEdgeBoth": {
+    "message": "上方與下方"
+  },
+  "revealEdgeLabel": {
+    "message": "靠近邊緣距離"
+  },
+  "targetHeightLabel": {
+    "message": "拖放區高度"
+  },
+  "sectionOpenBehavior": {
+    "message": "開啟方式"
+  },
+  "openSearchInNewTabLabel": {
+    "message": "搜尋結果固定開在新分頁"
+  },
+  "openUrlInNewTabLabel": {
+    "message": "URL 固定開在新分頁"
+  },
+  "openBehaviorHint": {
+    "message": "即使未啟用固定新分頁，拖放時按住 Ctrl、Shift 或 Command 也會開新分頁。"
+  },
+  "saveButton": {
+    "message": "儲存"
+  },
+  "resetButton": {
+    "message": "還原預設值"
+  },
+  "statusSaved": {
+    "message": "已儲存"
+  },
+  "overlayTitle": {
+    "message": "放開以搜尋或前往網址"
+  },
+  "overlaySubtitle": {
+    "message": "URL 會直接開啟；其他文字會用瀏覽器預設搜尋引擎搜尋。按住 Ctrl、Shift 或 Command 可開新分頁。"
+  },
+  "unableReadTitle": {
+    "message": "無法讀取拖曳內容"
+  },
+  "unableReadSubtitle": {
+    "message": "請拖曳選取文字、連結或純文字 URL。"
+  },
+  "extensionErrorTitle": {
+    "message": "擴充功能執行失敗"
+  },
+  "unableOpenTitle": {
+    "message": "無法開啟"
+  },
+  "unknownError": {
+    "message": "未知錯誤"
+  }
+}

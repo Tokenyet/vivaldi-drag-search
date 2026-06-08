@@ -1,0 +1,99 @@
+{
+  "extensionName": {
+    "message": "Vivaldi Drag Search",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Vivaldi の UI 自動非表示中でも、選択テキストや URL をページ端へドロップして検索または移動できます。",
+    "description": "Short extension description."
+  },
+  "optionsTitle": {
+    "message": "Vivaldi Drag Search オプション",
+    "description": "Options page title and action tooltip."
+  },
+  "optionsHeaderDescription": {
+    "message": "選択テキストや URL をページ端へドラッグし、ドロップして検索または移動します。",
+    "description": "Options page intro."
+  },
+  "sectionSearch": {
+    "message": "検索"
+  },
+  "searchModeLabel": {
+    "message": "検索方法"
+  },
+  "searchModeBrowser": {
+    "message": "ブラウザの既定検索エンジンを使う"
+  },
+  "searchModeTemplate": {
+    "message": "カスタム検索 URL を使う"
+  },
+  "searchTemplateLabel": {
+    "message": "カスタム検索 URL"
+  },
+  "searchTemplateHint": {
+    "message": "検索語句の位置には <code>%s</code> を使います。ブラウザの検索 API が失敗した場合もこの URL を使います。"
+  },
+  "sectionDropZone": {
+    "message": "ドロップ領域"
+  },
+  "dropEdgeLabel": {
+    "message": "起動する端"
+  },
+  "dropEdgeTop": {
+    "message": "上"
+  },
+  "dropEdgeBottom": {
+    "message": "下"
+  },
+  "dropEdgeBoth": {
+    "message": "上と下"
+  },
+  "revealEdgeLabel": {
+    "message": "端からの反応距離"
+  },
+  "targetHeightLabel": {
+    "message": "ドロップ領域の高さ"
+  },
+  "sectionOpenBehavior": {
+    "message": "開き方"
+  },
+  "openSearchInNewTabLabel": {
+    "message": "検索結果を常に新しいタブで開く"
+  },
+  "openUrlInNewTabLabel": {
+    "message": "URL を常に新しいタブで開く"
+  },
+  "openBehaviorHint": {
+    "message": "これらの設定がオフでも、ドロップ時に Ctrl、Shift、Command を押すと新しいタブで開きます。"
+  },
+  "saveButton": {
+    "message": "保存"
+  },
+  "resetButton": {
+    "message": "既定値に戻す"
+  },
+  "statusSaved": {
+    "message": "保存しました"
+  },
+  "overlayTitle": {
+    "message": "ドロップして検索または URL を開く"
+  },
+  "overlaySubtitle": {
+    "message": "URL は直接開きます。それ以外のテキストはブラウザの既定検索エンジンで検索します。Ctrl、Shift、Command を押すと新しいタブで開きます。"
+  },
+  "unableReadTitle": {
+    "message": "ドロップ内容を読み取れません"
+  },
+  "unableReadSubtitle": {
+    "message": "選択テキスト、リンク、またはプレーンテキストの URL をドラッグしてください。"
+  },
+  "extensionErrorTitle": {
+    "message": "拡張機能エラー"
+  },
+  "unableOpenTitle": {
+    "message": "開けません"
+  },
+  "unknownError": {
+    "message": "不明なエラー"
+  }
+}

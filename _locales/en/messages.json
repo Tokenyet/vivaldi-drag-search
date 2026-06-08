@@ -1,0 +1,99 @@
+{
+  "extensionName": {
+    "message": "Vivaldi Drag Search",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Drop selected text or URLs near the page edge to search or navigate while Vivaldi UI auto-hide is active.",
+    "description": "Short extension description."
+  },
+  "optionsTitle": {
+    "message": "Vivaldi Drag Search Options",
+    "description": "Options page title and action tooltip."
+  },
+  "optionsHeaderDescription": {
+    "message": "Drag selected text or URLs to a page edge, then drop to search or navigate.",
+    "description": "Options page intro."
+  },
+  "sectionSearch": {
+    "message": "Search"
+  },
+  "searchModeLabel": {
+    "message": "Search mode"
+  },
+  "searchModeBrowser": {
+    "message": "Use browser default search engine"
+  },
+  "searchModeTemplate": {
+    "message": "Use custom search URL"
+  },
+  "searchTemplateLabel": {
+    "message": "Custom search URL"
+  },
+  "searchTemplateHint": {
+    "message": "Use <code>%s</code> for the search terms. This URL is also used if the browser search API fails."
+  },
+  "sectionDropZone": {
+    "message": "Drop zone"
+  },
+  "dropEdgeLabel": {
+    "message": "Trigger edge"
+  },
+  "dropEdgeTop": {
+    "message": "Top"
+  },
+  "dropEdgeBottom": {
+    "message": "Bottom"
+  },
+  "dropEdgeBoth": {
+    "message": "Top and bottom"
+  },
+  "revealEdgeLabel": {
+    "message": "Edge reveal distance"
+  },
+  "targetHeightLabel": {
+    "message": "Drop zone height"
+  },
+  "sectionOpenBehavior": {
+    "message": "Open behavior"
+  },
+  "openSearchInNewTabLabel": {
+    "message": "Always open search results in a new tab"
+  },
+  "openUrlInNewTabLabel": {
+    "message": "Always open URLs in a new tab"
+  },
+  "openBehaviorHint": {
+    "message": "Hold Ctrl, Shift, or Command while dropping to open in a new tab even when these options are off."
+  },
+  "saveButton": {
+    "message": "Save"
+  },
+  "resetButton": {
+    "message": "Reset defaults"
+  },
+  "statusSaved": {
+    "message": "Saved"
+  },
+  "overlayTitle": {
+    "message": "Drop to search or open URL"
+  },
+  "overlaySubtitle": {
+    "message": "URLs open directly. Other text searches with your browser's default search engine. Hold Ctrl, Shift, or Command to open a new tab."
+  },
+  "unableReadTitle": {
+    "message": "Unable to read dropped content"
+  },
+  "unableReadSubtitle": {
+    "message": "Drag selected text, a link, or a plain URL."
+  },
+  "extensionErrorTitle": {
+    "message": "Extension error"
+  },
+  "unableOpenTitle": {
+    "message": "Unable to open"
+  },
+  "unknownError": {
+    "message": "Unknown error"
+  }
+}

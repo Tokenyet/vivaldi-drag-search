@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="optionsTitle">Vivaldi Drag Search Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 data-i18n="extensionName">Vivaldi Drag Search</h1>
+        <p data-i18n="optionsHeaderDescription">Drag selected text or URLs to a page edge, then drop to search or navigate.</p>
+      </header>
+
+      <form id="settings-form">
+        <section>
+          <h2 data-i18n="sectionSearch">Search</h2>
+          <label>
+            <span data-i18n="searchModeLabel">Search mode</span>
+            <select id="searchMode" name="searchMode">
+              <option value="browser" data-i18n="searchModeBrowser">Use browser default search engine</option>
+              <option value="template" data-i18n="searchModeTemplate">Use custom search URL</option>
+            </select>
+          </label>
+
+          <label>
+            <span data-i18n="searchTemplateLabel">Custom search URL</span>
+            <input id="searchTemplate" name="searchTemplate" type="text" inputmode="url" spellcheck="false" placeholder="https://www.google.com/search?q=%s">
+          </label>
+          <p class="hint" data-i18n-html="searchTemplateHint">Use <code>%s</code> for the search terms. This URL is also used if the browser search API fails.</p>
+        </section>
+
+        <section>
+          <h2 data-i18n="sectionDropZone">Drop zone</h2>
+          <label>
+            <span data-i18n="dropEdgeLabel">Trigger edge</span>
+            <select id="dropEdge" name="dropEdge">
+              <option value="top" data-i18n="dropEdgeTop">Top</option>
+              <option value="bottom" data-i18n="dropEdgeBottom">Bottom</option>
+              <option value="both" data-i18n="dropEdgeBoth">Top and bottom</option>
+            </select>
+          </label>
+
+          <div class="grid">
+            <label>
+              <span data-i18n="revealEdgeLabel">Edge reveal distance</span>
+              <input id="revealEdgePx" name="revealEdgePx" type="number" min="24" max="320" step="4">
+            </label>
+            <label>
+              <span data-i18n="targetHeightLabel">Drop zone height</span>
+              <input id="targetHeightPx" name="targetHeightPx" type="number" min="64" max="180" step="4">
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <h2 data-i18n="sectionOpenBehavior">Open behavior</h2>
+          <label class="check">
+            <input id="openSearchInNewTab" name="openSearchInNewTab" type="checkbox">
+            <span data-i18n="openSearchInNewTabLabel">Always open search results in a new tab</span>
+          </label>
+          <label class="check">
+            <input id="openUrlInNewTab" name="openUrlInNewTab" type="checkbox">
+            <span data-i18n="openUrlInNewTabLabel">Always open URLs in a new tab</span>
+          </label>
+          <p class="hint" data-i18n="openBehaviorHint">Hold Ctrl, Shift, or Command while dropping to open in a new tab even when these options are off.</p>
+        </section>
+
+        <footer>
+          <button type="submit" data-i18n="saveButton">Save</button>
+          <button id="reset" type="button" data-i18n="resetButton">Reset defaults</button>
+          <span id="status" role="status" aria-live="polite"></span>
+        </footer>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

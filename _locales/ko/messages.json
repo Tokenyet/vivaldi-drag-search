@@ -1,0 +1,99 @@
+{
+  "extensionName": {
+    "message": "Vivaldi Drag Search",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Vivaldi UI 자동 숨김 상태에서도 선택한 텍스트나 URL을 페이지 가장자리로 드롭해 검색하거나 이동합니다.",
+    "description": "Short extension description."
+  },
+  "optionsTitle": {
+    "message": "Vivaldi Drag Search 옵션",
+    "description": "Options page title and action tooltip."
+  },
+  "optionsHeaderDescription": {
+    "message": "선택한 텍스트나 URL을 페이지 가장자리로 드래그한 뒤 놓아 검색하거나 이동합니다.",
+    "description": "Options page intro."
+  },
+  "sectionSearch": {
+    "message": "검색"
+  },
+  "searchModeLabel": {
+    "message": "검색 방식"
+  },
+  "searchModeBrowser": {
+    "message": "브라우저 기본 검색 엔진 사용"
+  },
+  "searchModeTemplate": {
+    "message": "사용자 지정 검색 URL 사용"
+  },
+  "searchTemplateLabel": {
+    "message": "사용자 지정 검색 URL"
+  },
+  "searchTemplateHint": {
+    "message": "검색어 위치에는 <code>%s</code>를 사용하세요. 브라우저 검색 API가 실패할 때도 이 URL을 사용합니다."
+  },
+  "sectionDropZone": {
+    "message": "드롭 영역"
+  },
+  "dropEdgeLabel": {
+    "message": "트리거 가장자리"
+  },
+  "dropEdgeTop": {
+    "message": "위"
+  },
+  "dropEdgeBottom": {
+    "message": "아래"
+  },
+  "dropEdgeBoth": {
+    "message": "위와 아래"
+  },
+  "revealEdgeLabel": {
+    "message": "가장자리 감지 거리"
+  },
+  "targetHeightLabel": {
+    "message": "드롭 영역 높이"
+  },
+  "sectionOpenBehavior": {
+    "message": "열기 동작"
+  },
+  "openSearchInNewTabLabel": {
+    "message": "검색 결과를 항상 새 탭에서 열기"
+  },
+  "openUrlInNewTabLabel": {
+    "message": "URL을 항상 새 탭에서 열기"
+  },
+  "openBehaviorHint": {
+    "message": "이 옵션이 꺼져 있어도 드롭할 때 Ctrl, Shift 또는 Command를 누르면 새 탭에서 열립니다."
+  },
+  "saveButton": {
+    "message": "저장"
+  },
+  "resetButton": {
+    "message": "기본값 복원"
+  },
+  "statusSaved": {
+    "message": "저장됨"
+  },
+  "overlayTitle": {
+    "message": "드롭하여 검색하거나 URL 열기"
+  },
+  "overlaySubtitle": {
+    "message": "URL은 바로 열립니다. 다른 텍스트는 브라우저 기본 검색 엔진으로 검색합니다. Ctrl, Shift 또는 Command를 누르면 새 탭에서 열립니다."
+  },
+  "unableReadTitle": {
+    "message": "드롭한 내용을 읽을 수 없음"
+  },
+  "unableReadSubtitle": {
+    "message": "선택한 텍스트, 링크 또는 일반 텍스트 URL을 드래그하세요."
+  },
+  "extensionErrorTitle": {
+    "message": "확장 프로그램 오류"
+  },
+  "unableOpenTitle": {
+    "message": "열 수 없음"
+  },
+  "unknownError": {
+    "message": "알 수 없는 오류"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "extensionName": {
+    "message": "Vivaldi 拖放搜索",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "在 Vivaldi UI 自动隐藏时，把选中文字或网址拖到页面边缘即可搜索或前往。",
+    "description": "Short extension description."
+  },
+  "optionsTitle": {
+    "message": "Vivaldi 拖放搜索选项",
+    "description": "Options page title and action tooltip."
+  },
+  "optionsHeaderDescription": {
+    "message": "把选中文字或 URL 拖到页面边缘，松开后搜索或前往网址。",
+    "description": "Options page intro."
+  },
+  "sectionSearch": {
+    "message": "搜索"
+  },
+  "searchModeLabel": {
+    "message": "搜索方式"
+  },
+  "searchModeBrowser": {
+    "message": "使用浏览器默认搜索引擎"
+  },
+  "searchModeTemplate": {
+    "message": "使用自定义搜索 URL"
+  },
+  "searchTemplateLabel": {
+    "message": "自定义搜索 URL"
+  },
+  "searchTemplateHint": {
+    "message": "自定义 URL 请用 <code>%s</code> 表示搜索字串；浏览器搜索 API 失败时也会使用这个 URL。"
+  },
+  "sectionDropZone": {
+    "message": "拖放区"
+  },
+  "dropEdgeLabel": {
+    "message": "触发边缘"
+  },
+  "dropEdgeTop": {
+    "message": "上方"
+  },
+  "dropEdgeBottom": {
+    "message": "下方"
+  },
+  "dropEdgeBoth": {
+    "message": "上方与下方"
+  },
+  "revealEdgeLabel": {
+    "message": "靠近边缘距离"
+  },
+  "targetHeightLabel": {
+    "message": "拖放区高度"
+  },
+  "sectionOpenBehavior": {
+    "message": "打开方式"
+  },
+  "openSearchInNewTabLabel": {
+    "message": "搜索结果固定在新标签页打开"
+  },
+  "openUrlInNewTabLabel": {
+    "message": "URL 固定在新标签页打开"
+  },
+  "openBehaviorHint": {
+    "message": "即使未启用固定新标签页，拖放时按住 Ctrl、Shift 或 Command 也会打开新标签页。"
+  },
+  "saveButton": {
+    "message": "保存"
+  },
+  "resetButton": {
+    "message": "恢复默认值"
+  },
+  "statusSaved": {
+    "message": "已保存"
+  },
+  "overlayTitle": {
+    "message": "松开以搜索或前往网址"
+  },
+  "overlaySubtitle": {
+    "message": "URL 会直接打开；其他文字会用浏览器默认搜索引擎搜索。按住 Ctrl、Shift 或 Command 可打开新标签页。"
+  },
+  "unableReadTitle": {
+    "message": "无法读取拖曳内容"
+  },
+  "unableReadSubtitle": {
+    "message": "请拖曳选中文字、链接或纯文本 URL。"
+  },
+  "extensionErrorTitle": {
+    "message": "扩展程序执行失败"
+  },
+  "unableOpenTitle": {
+    "message": "无法打开"
+  },
+  "unknownError": {
+    "message": "未知错误"
+  }
+}

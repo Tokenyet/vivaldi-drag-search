@@ -115,9 +115,9 @@ Before final public launch, it is better to replace the screenshot with a real s
 Use these after the GitHub repository is public:
 
 ```text
-Homepage URL: https://github.com/<owner>/vivaldi-drag-search
-Support URL: https://github.com/<owner>/vivaldi-drag-search/issues
-Privacy Policy URL: https://github.com/<owner>/vivaldi-drag-search/blob/main/docs/PRIVACY.md
+Homepage URL: https://github.com/Tokenyet/vivaldi-drag-search
+Support URL: https://github.com/Tokenyet/vivaldi-drag-search/issues
+Privacy Policy URL: https://github.com/Tokenyet/vivaldi-drag-search/blob/main/docs/PRIVACY.md
 ```
 
 If you set up GitHub Pages, use the GitHub Pages privacy URL instead because it looks cleaner.

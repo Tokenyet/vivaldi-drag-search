@@ -4,6 +4,10 @@ A small Manifest V3 extension for Vivaldi's UI Auto-hide mode. Drag selected tex
 
 The extension is localized for English, Traditional Chinese, Simplified Chinese, Japanese, and Korean.
 
+Official site: https://tokenyet.github.io/vivaldi-drag-search/
+
+Chrome Web Store: https://chromewebstore.google.com/detail/vivaldi-drag-search/fnmajmjfcnfojmmehjplmilbdcogohkc
+
 ## Install locally in Vivaldi
 
 1. Open `vivaldi://extensions`.

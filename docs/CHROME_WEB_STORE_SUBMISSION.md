@@ -112,15 +112,14 @@ Before final public launch, it is better to replace the screenshot with a real s
 
 ### Additional URLs
 
-Use these after the GitHub repository is public:
+Use these in the Chrome Web Store dashboard:
 
 ```text
-Homepage URL: https://github.com/Tokenyet/vivaldi-drag-search
+Chrome Web Store URL: https://chromewebstore.google.com/detail/vivaldi-drag-search/fnmajmjfcnfojmmehjplmilbdcogohkc
+Homepage URL: https://tokenyet.github.io/vivaldi-drag-search/
 Support URL: https://github.com/Tokenyet/vivaldi-drag-search/issues
-Privacy Policy URL: https://github.com/Tokenyet/vivaldi-drag-search/blob/main/docs/PRIVACY.md
+Privacy Policy URL: https://tokenyet.github.io/vivaldi-drag-search/privacy.html
 ```
-
-If you set up GitHub Pages, use the GitHub Pages privacy URL instead because it looks cleaner.
 
 ## Privacy Practices
 

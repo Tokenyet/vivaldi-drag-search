@@ -2,17 +2,17 @@ const DEFAULT_SETTINGS = {
   searchMode: "browser",
   searchTemplate: "https://www.google.com/search?q=%s",
   dropEdge: "top",
-  openSearchInNewTab: false,
-  openUrlInNewTab: false,
   revealEdgePx: 120,
   targetHeightPx: 96
 };
 
+const LEGACY_OPEN_SETTING_KEYS = ["openSearchInNewTab", "openUrlInNewTab"];
 const SAFE_NAVIGATION_PROTOCOLS = new Set(["http:", "https:"]);
 
 chrome.runtime.onInstalled.addListener(async () => {
   const existing = await chrome.storage.sync.get(DEFAULT_SETTINGS);
   await chrome.storage.sync.set({ ...DEFAULT_SETTINGS, ...existing });
+  await chrome.storage.sync.remove(LEGACY_OPEN_SETTING_KEYS);
 });
 
 chrome.action.onClicked.addListener(() => {
@@ -39,13 +39,16 @@ async function handleMessage(message, sender) {
   const settings = await getSettings();
   const url = parseNavigableUrl(rawText, Boolean(message.preferUrl));
   const tabId = sender.tab?.id;
+  const openMode = normalizeOpenMode(message.openMode);
+  const forceCurrentTab = openMode === "current";
+  const forceNewTab = openMode === "new" || Boolean(message.forceNewTab);
 
   if (url) {
-    await openUrl(url.href, Boolean(message.forceNewTab || settings.openUrlInNewTab), tabId);
+    await openUrl(url.href, !forceCurrentTab && forceNewTab, tabId);
     return { ok: true, action: "navigate", url: url.href };
   }
 
-  await searchText(rawText, Boolean(message.forceNewTab || settings.openSearchInNewTab), tabId, settings);
+  await searchText(rawText, !forceCurrentTab && forceNewTab, tabId, settings);
   return { ok: true, action: "search", text: rawText };
 }
 
@@ -59,6 +62,13 @@ function normalizeDroppedText(value) {
     .replace(/\u0000/g, "")
     .replace(/\r\n?/g, "\n")
     .trim();
+}
+
+function normalizeOpenMode(value) {
+  if (value === "current" || value === "new") {
+    return value;
+  }
+  return "";
 }
 
 function parseNavigableUrl(value, preferUrl) {

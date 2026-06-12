@@ -4,7 +4,7 @@
     "description": "Extension name."
   },
   "extensionDescription": {
-    "message": "在 Vivaldi UI 自動隱藏時，把選取文字或網址拖到頁面邊緣即可搜尋或前往。",
+    "message": "在 Vivaldi UI 自動隱藏時，把文字或網址拖到頁面邊緣，再選擇此分頁、新分頁，或停留取消。",
     "description": "Short extension description."
   },
   "optionsTitle": {
@@ -12,7 +12,7 @@
     "description": "Options page title and action tooltip."
   },
   "optionsHeaderDescription": {
-    "message": "把選取文字或 URL 拖到頁面邊緣，放開後搜尋或前往網址。",
+    "message": "把選取文字或 URL 拖到頁面邊緣，再選擇此分頁、新分頁，或停留取消。",
     "description": "Options page intro."
   },
   "sectionSearch": {
@@ -54,18 +54,6 @@
   "targetHeightLabel": {
     "message": "拖放區高度"
   },
-  "sectionOpenBehavior": {
-    "message": "開啟方式"
-  },
-  "openSearchInNewTabLabel": {
-    "message": "搜尋結果固定開在新分頁"
-  },
-  "openUrlInNewTabLabel": {
-    "message": "URL 固定開在新分頁"
-  },
-  "openBehaviorHint": {
-    "message": "即使未啟用固定新分頁，拖放時按住 Ctrl、Shift 或 Command 也會開新分頁。"
-  },
   "saveButton": {
     "message": "儲存"
   },
@@ -76,10 +64,28 @@
     "message": "已儲存"
   },
   "overlayTitle": {
-    "message": "放開以搜尋或前往網址"
+    "message": "選擇開啟位置"
   },
   "overlaySubtitle": {
-    "message": "URL 會直接開啟；其他文字會用瀏覽器預設搜尋引擎搜尋。按住 Ctrl、Shift 或 Command 可開新分頁。"
+    "message": "停留在取消可關閉面板，之後可照常拖放到頁面。"
+  },
+  "openCurrentTabAction": {
+    "message": "此分頁"
+  },
+  "openCurrentTabHint": {
+    "message": "取代目前頁面"
+  },
+  "openNewTabAction": {
+    "message": "新分頁"
+  },
+  "openNewTabHint": {
+    "message": "保留目前頁面"
+  },
+  "cancelAction": {
+    "message": "取消"
+  },
+  "cancelHint": {
+    "message": "停留 1 秒"
   },
   "unableReadTitle": {
     "message": "無法讀取拖曳內容"

@@ -4,7 +4,7 @@
     "description": "Extension name."
   },
   "extensionDescription": {
-    "message": "Drop selected text or URLs near the page edge to search or navigate while Vivaldi UI auto-hide is active.",
+    "message": "Drop text or URLs near the page edge, then choose this tab, new tab, or hold Cancel while Vivaldi UI auto-hide is active.",
     "description": "Short extension description."
   },
   "optionsTitle": {
@@ -12,7 +12,7 @@
     "description": "Options page title and action tooltip."
   },
   "optionsHeaderDescription": {
-    "message": "Drag selected text or URLs to a page edge, then drop to search or navigate.",
+    "message": "Drag selected text or URLs to a page edge, then choose this tab, new tab, or hold Cancel.",
     "description": "Options page intro."
   },
   "sectionSearch": {
@@ -54,18 +54,6 @@
   "targetHeightLabel": {
     "message": "Drop zone height"
   },
-  "sectionOpenBehavior": {
-    "message": "Open behavior"
-  },
-  "openSearchInNewTabLabel": {
-    "message": "Always open search results in a new tab"
-  },
-  "openUrlInNewTabLabel": {
-    "message": "Always open URLs in a new tab"
-  },
-  "openBehaviorHint": {
-    "message": "Hold Ctrl, Shift, or Command while dropping to open in a new tab even when these options are off."
-  },
   "saveButton": {
     "message": "Save"
   },
@@ -76,10 +64,28 @@
     "message": "Saved"
   },
   "overlayTitle": {
-    "message": "Drop to search or open URL"
+    "message": "Choose where to open"
   },
   "overlaySubtitle": {
-    "message": "URLs open directly. Other text searches with your browser's default search engine. Hold Ctrl, Shift, or Command to open a new tab."
+    "message": "Hold Cancel to hide this panel, then drop anywhere normally."
+  },
+  "openCurrentTabAction": {
+    "message": "This tab"
+  },
+  "openCurrentTabHint": {
+    "message": "Replace page"
+  },
+  "openNewTabAction": {
+    "message": "New tab"
+  },
+  "openNewTabHint": {
+    "message": "Keep page"
+  },
+  "cancelAction": {
+    "message": "Cancel"
+  },
+  "cancelHint": {
+    "message": "Hold 1s"
   },
   "unableReadTitle": {
     "message": "Unable to read dropped content"

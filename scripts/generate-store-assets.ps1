@@ -83,6 +83,29 @@ function Draw-Icon {
   $path.Dispose()
 }
 
+function Draw-Action {
+  param(
+    [System.Drawing.Graphics] $Graphics,
+    [string] $Text,
+    [float] $X,
+    [float] $Y,
+    [float] $Width,
+    [float] $Height,
+    [float] $FontSize
+  )
+
+  $path = New-RoundedRectanglePath $X $Y $Width $Height 6
+  $brush = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 255, 255, 255))
+  $border = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(255, 157, 190, 196), 1)
+  $Graphics.FillPath($brush, $path)
+  $Graphics.DrawPath($border, $path)
+  Draw-Text $Graphics $Text ($X + 8) ($Y + (($Height - $FontSize - 4) / 2)) ($Width - 16) ($FontSize + 8) $FontSize ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
+
+  $border.Dispose()
+  $brush.Dispose()
+  $path.Dispose()
+}
+
 function Draw-Promo {
   $bitmap = [System.Drawing.Bitmap]::new(440, 280)
   $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
@@ -92,14 +115,17 @@ function Draw-Promo {
 
   Draw-Icon $graphics 28 36 82
   Draw-Text $graphics "Vivaldi Drag Search" 128 40 292 40 25 ([System.Drawing.Color]::FromArgb(255, 21, 34, 36)) ([System.Drawing.FontStyle]::Bold)
-  Draw-Text $graphics "Drop selected text or URLs at the page edge." 130 86 260 54 18 ([System.Drawing.Color]::FromArgb(255, 77, 89, 92))
+  Draw-Text $graphics "Choose this tab, new tab, or hold Cancel." 130 86 260 54 18 ([System.Drawing.Color]::FromArgb(255, 77, 89, 92))
 
   $drop = New-RoundedRectanglePath 28 162 384 74 10
   $dropBrush = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 231, 251, 252))
   $borderPen = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(255, 31, 111, 120), 2)
   $graphics.FillPath($dropBrush, $drop)
   $graphics.DrawPath($borderPen, $drop)
-  Draw-Text $graphics "Drop to search or open URL" 62 185 320 32 21 ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
+  Draw-Text $graphics "Choose where to open" 62 174 320 28 20 ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
+  Draw-Action $graphics "This tab" 62 204 96 24 13
+  Draw-Action $graphics "New tab" 172 204 96 24 13
+  Draw-Action $graphics "Hold Cancel" 282 204 96 24 13
 
   $output = Join-Path $assetDir "promo-small-440x280.png"
   $bitmap.Save($output, [System.Drawing.Imaging.ImageFormat]::Png)
@@ -132,14 +158,17 @@ function Draw-Screenshot {
   $graphics.FillPath($selectionBrush, $selection)
   Draw-Text $graphics "vivaldi auto hide search" 146 345 392 34 24 ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
 
-  $drop = New-RoundedRectanglePath 96 0 1088 116 0
+  $drop = New-RoundedRectanglePath 96 0 1088 142 0
   $dropBrush = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 231, 251, 252))
   $dropBorder = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(255, 31, 111, 120), 2)
   $graphics.FillPath($dropBrush, $drop)
   $graphics.DrawPath($dropBorder, $drop)
-  Draw-Icon $graphics 362 30 56
-  Draw-Text $graphics "Drop to search or open URL" 438 28 500 34 26 ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
-  Draw-Text $graphics "Works when the browser toolbar is hidden." 440 64 520 30 18 ([System.Drawing.Color]::FromArgb(255, 72, 92, 96))
+  Draw-Icon $graphics 244 30 56
+  Draw-Text $graphics "Choose where to open" 320 24 340 34 26 ([System.Drawing.Color]::FromArgb(255, 31, 111, 120)) ([System.Drawing.FontStyle]::Bold)
+  Draw-Text $graphics "Works when the browser toolbar is hidden." 322 60 420 30 18 ([System.Drawing.Color]::FromArgb(255, 72, 92, 96))
+  Draw-Action $graphics "This tab" 766 40 126 52 18
+  Draw-Action $graphics "New tab" 906 40 126 52 18
+  Draw-Action $graphics "Hold Cancel" 1040 40 140 52 18
 
   $output = Join-Path $assetDir "screenshot-en-1280x800.png"
   $bitmap.Save($output, [System.Drawing.Imaging.ImageFormat]::Png)

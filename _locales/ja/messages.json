@@ -4,7 +4,7 @@
     "description": "Extension name."
   },
   "extensionDescription": {
-    "message": "Vivaldi の UI 自動非表示中でも、選択テキストや URL をページ端へドロップして検索または移動できます。",
+    "message": "Vivaldi の UI 自動非表示中でも、テキストや URL をページ端へドロップし、このタブ、新しいタブ、またはキャンセル保持を選べます。",
     "description": "Short extension description."
   },
   "optionsTitle": {
@@ -12,7 +12,7 @@
     "description": "Options page title and action tooltip."
   },
   "optionsHeaderDescription": {
-    "message": "選択テキストや URL をページ端へドラッグし、ドロップして検索または移動します。",
+    "message": "選択テキストや URL をページ端へドラッグし、このタブ、新しいタブ、またはキャンセル保持を選びます。",
     "description": "Options page intro."
   },
   "sectionSearch": {
@@ -54,18 +54,6 @@
   "targetHeightLabel": {
     "message": "ドロップ領域の高さ"
   },
-  "sectionOpenBehavior": {
-    "message": "開き方"
-  },
-  "openSearchInNewTabLabel": {
-    "message": "検索結果を常に新しいタブで開く"
-  },
-  "openUrlInNewTabLabel": {
-    "message": "URL を常に新しいタブで開く"
-  },
-  "openBehaviorHint": {
-    "message": "これらの設定がオフでも、ドロップ時に Ctrl、Shift、Command を押すと新しいタブで開きます。"
-  },
   "saveButton": {
     "message": "保存"
   },
@@ -76,10 +64,28 @@
     "message": "保存しました"
   },
   "overlayTitle": {
-    "message": "ドロップして検索または URL を開く"
+    "message": "開く場所を選択"
   },
   "overlaySubtitle": {
-    "message": "URL は直接開きます。それ以外のテキストはブラウザの既定検索エンジンで検索します。Ctrl、Shift、Command を押すと新しいタブで開きます。"
+    "message": "キャンセル上で 1 秒保持するとパネルが隠れ、そのままページへドロップできます。"
+  },
+  "openCurrentTabAction": {
+    "message": "このタブ"
+  },
+  "openCurrentTabHint": {
+    "message": "現在のページを置換"
+  },
+  "openNewTabAction": {
+    "message": "新しいタブ"
+  },
+  "openNewTabHint": {
+    "message": "現在のページを保持"
+  },
+  "cancelAction": {
+    "message": "キャンセル"
+  },
+  "cancelHint": {
+    "message": "1 秒保持"
   },
   "unableReadTitle": {
     "message": "ドロップ内容を読み取れません"

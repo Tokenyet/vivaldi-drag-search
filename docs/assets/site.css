@@ -172,8 +172,9 @@ p {
   align-items: center;
   background: color-mix(in srgb, var(--accent) 12%, var(--panel));
   border-bottom: 2px solid var(--accent);
-  display: flex;
+  display: grid;
   gap: 14px;
+  grid-template-columns: auto minmax(0, 1fr);
   min-height: 92px;
   padding: 18px 26px;
 }
@@ -191,6 +192,26 @@ p {
 .drop-subtitle {
   color: var(--muted);
   font-size: 14px;
+}
+
+.drop-actions {
+  display: grid;
+  gap: 8px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.drop-actions span {
+  background: color-mix(in srgb, var(--panel) 82%, var(--text) 8%);
+  border: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
+  border-radius: 6px;
+  color: var(--text);
+  display: block;
+  font-size: 14px;
+  font-weight: 750;
+  min-width: 0;
+  padding: 8px 10px;
+  text-align: center;
 }
 
 .mock-page {

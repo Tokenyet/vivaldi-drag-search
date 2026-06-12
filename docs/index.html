@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vivaldi Drag Search</title>
-    <meta name="description" content="Drop selected text or URLs near the page edge to search or navigate while browser UI is hidden.">
+    <meta name="description" content="Drop selected text or URLs near the page edge, then choose this tab, a new tab, or hold Cancel while browser UI is hidden.">
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
@@ -25,7 +25,7 @@
         <div class="hero-copy">
           <p class="eyebrow">For hidden browser UI workflows</p>
           <h1>Vivaldi Drag Search</h1>
-          <p class="lead">Drop selected text, links, or URLs near the page edge to search or navigate without revealing the address bar.</p>
+          <p class="lead">Drop selected text, links, or URLs near the page edge, then choose this tab, a new tab, or hold Cancel to continue the native drop.</p>
           <div class="actions">
             <a class="button" href="https://chromewebstore.google.com/detail/vivaldi-drag-search/fnmajmjfcnfojmmehjplmilbdcogohkc">Install from Chrome Web Store</a>
             <a class="button secondary" href="https://github.com/Tokenyet/vivaldi-drag-search">View source</a>
@@ -37,8 +37,13 @@
           <div class="drop-target">
             <span class="logo" aria-hidden="true">V</span>
             <div>
-              <div class="drop-title">Drop to search or open URL</div>
+              <div class="drop-title">Choose where to open</div>
               <div class="drop-subtitle">Works when the browser toolbar is hidden.</div>
+            </div>
+            <div class="drop-actions" aria-hidden="true">
+              <span>This tab</span>
+              <span>New tab</span>
+              <span>Hold Cancel</span>
             </div>
           </div>
           <div class="mock-page">
@@ -55,7 +60,7 @@
           <p>Adds a small page-edge drop zone for explicit drag and drop actions.</p>
           <ul>
             <li>Search selected text.</li>
-            <li>Open dropped URLs and links.</li>
+            <li>Open dropped URLs and links in this tab or a new tab.</li>
             <li>Use the browser default search provider when supported.</li>
           </ul>
         </article>
@@ -65,7 +70,7 @@
           <p>Configure the workflow from the extension options page.</p>
           <ul>
             <li>Top edge, bottom edge, or both.</li>
-            <li>Current tab or new tab behavior.</li>
+            <li>Explicit This tab and New tab targets, plus hold-to-cancel.</li>
             <li>Fallback search URL template.</li>
           </ul>
         </article>

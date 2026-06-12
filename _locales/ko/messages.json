@@ -4,7 +4,7 @@
     "description": "Extension name."
   },
   "extensionDescription": {
-    "message": "Vivaldi UI 자동 숨김 상태에서도 선택한 텍스트나 URL을 페이지 가장자리로 드롭해 검색하거나 이동합니다.",
+    "message": "Vivaldi UI 자동 숨김 상태에서도 텍스트나 URL을 페이지 가장자리로 드롭해 현재 탭, 새 탭 또는 취소 유지를 선택합니다.",
     "description": "Short extension description."
   },
   "optionsTitle": {
@@ -12,7 +12,7 @@
     "description": "Options page title and action tooltip."
   },
   "optionsHeaderDescription": {
-    "message": "선택한 텍스트나 URL을 페이지 가장자리로 드래그한 뒤 놓아 검색하거나 이동합니다.",
+    "message": "선택한 텍스트나 URL을 페이지 가장자리로 드래그한 뒤 현재 탭, 새 탭 또는 취소 유지를 선택합니다.",
     "description": "Options page intro."
   },
   "sectionSearch": {
@@ -54,18 +54,6 @@
   "targetHeightLabel": {
     "message": "드롭 영역 높이"
   },
-  "sectionOpenBehavior": {
-    "message": "열기 동작"
-  },
-  "openSearchInNewTabLabel": {
-    "message": "검색 결과를 항상 새 탭에서 열기"
-  },
-  "openUrlInNewTabLabel": {
-    "message": "URL을 항상 새 탭에서 열기"
-  },
-  "openBehaviorHint": {
-    "message": "이 옵션이 꺼져 있어도 드롭할 때 Ctrl, Shift 또는 Command를 누르면 새 탭에서 열립니다."
-  },
   "saveButton": {
     "message": "저장"
   },
@@ -76,10 +64,28 @@
     "message": "저장됨"
   },
   "overlayTitle": {
-    "message": "드롭하여 검색하거나 URL 열기"
+    "message": "열 위치 선택"
   },
   "overlaySubtitle": {
-    "message": "URL은 바로 열립니다. 다른 텍스트는 브라우저 기본 검색 엔진으로 검색합니다. Ctrl, Shift 또는 Command를 누르면 새 탭에서 열립니다."
+    "message": "취소 위에 1초간 머무르면 패널이 숨겨지고 페이지에 그대로 드롭할 수 있습니다."
+  },
+  "openCurrentTabAction": {
+    "message": "현재 탭"
+  },
+  "openCurrentTabHint": {
+    "message": "현재 페이지 바꾸기"
+  },
+  "openNewTabAction": {
+    "message": "새 탭"
+  },
+  "openNewTabHint": {
+    "message": "현재 페이지 유지"
+  },
+  "cancelAction": {
+    "message": "취소"
+  },
+  "cancelHint": {
+    "message": "1초 유지"
   },
   "unableReadTitle": {
     "message": "드롭한 내용을 읽을 수 없음"

@@ -4,7 +4,7 @@
     "description": "Extension name."
   },
   "extensionDescription": {
-    "message": "在 Vivaldi UI 自动隐藏时，把选中文字或网址拖到页面边缘即可搜索或前往。",
+    "message": "在 Vivaldi UI 自动隐藏时，把文字或网址拖到页面边缘，再选择此标签页、新标签页，或停留取消。",
     "description": "Short extension description."
   },
   "optionsTitle": {
@@ -12,7 +12,7 @@
     "description": "Options page title and action tooltip."
   },
   "optionsHeaderDescription": {
-    "message": "把选中文字或 URL 拖到页面边缘，松开后搜索或前往网址。",
+    "message": "把选中文字或 URL 拖到页面边缘，再选择此标签页、新标签页，或停留取消。",
     "description": "Options page intro."
   },
   "sectionSearch": {
@@ -54,18 +54,6 @@
   "targetHeightLabel": {
     "message": "拖放区高度"
   },
-  "sectionOpenBehavior": {
-    "message": "打开方式"
-  },
-  "openSearchInNewTabLabel": {
-    "message": "搜索结果固定在新标签页打开"
-  },
-  "openUrlInNewTabLabel": {
-    "message": "URL 固定在新标签页打开"
-  },
-  "openBehaviorHint": {
-    "message": "即使未启用固定新标签页，拖放时按住 Ctrl、Shift 或 Command 也会打开新标签页。"
-  },
   "saveButton": {
     "message": "保存"
   },
@@ -76,10 +64,28 @@
     "message": "已保存"
   },
   "overlayTitle": {
-    "message": "松开以搜索或前往网址"
+    "message": "选择打开位置"
   },
   "overlaySubtitle": {
-    "message": "URL 会直接打开；其他文字会用浏览器默认搜索引擎搜索。按住 Ctrl、Shift 或 Command 可打开新标签页。"
+    "message": "停留在取消可关闭面板，之后可照常拖放到页面。"
+  },
+  "openCurrentTabAction": {
+    "message": "此标签页"
+  },
+  "openCurrentTabHint": {
+    "message": "替换当前页面"
+  },
+  "openNewTabAction": {
+    "message": "新标签页"
+  },
+  "openNewTabHint": {
+    "message": "保留当前页面"
+  },
+  "cancelAction": {
+    "message": "取消"
+  },
+  "cancelHint": {
+    "message": "停留 1 秒"
   },
   "unableReadTitle": {
     "message": "无法读取拖曳内容"

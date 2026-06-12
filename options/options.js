@@ -2,8 +2,6 @@ const DEFAULT_SETTINGS = {
   searchMode: "browser",
   searchTemplate: "https://www.google.com/search?q=%s",
   dropEdge: "top",
-  openSearchInNewTab: false,
-  openUrlInNewTab: false,
   revealEdgePx: 120,
   targetHeightPx: 96
 };
@@ -34,8 +32,6 @@ function fillForm(settings) {
   form.searchMode.value = settings.searchMode;
   form.searchTemplate.value = settings.searchTemplate;
   form.dropEdge.value = settings.dropEdge;
-  form.openSearchInNewTab.checked = Boolean(settings.openSearchInNewTab);
-  form.openUrlInNewTab.checked = Boolean(settings.openUrlInNewTab);
   form.revealEdgePx.value = settings.revealEdgePx;
   form.targetHeightPx.value = settings.targetHeightPx;
 }
@@ -45,8 +41,6 @@ function readForm() {
     searchMode: form.searchMode.value,
     searchTemplate: normalizeSearchTemplate(form.searchTemplate.value),
     dropEdge: form.dropEdge.value,
-    openSearchInNewTab: form.openSearchInNewTab.checked,
-    openUrlInNewTab: form.openUrlInNewTab.checked,
     revealEdgePx: clampNumber(form.revealEdgePx.value, 24, 320),
     targetHeightPx: clampNumber(form.targetHeightPx.value, 64, 180)
   };

@@ -1,6 +1,6 @@
 # Vivaldi Drag Search
 
-A small Manifest V3 extension for Vivaldi's UI Auto-hide mode. Drag selected text, a link, or a plain URL to the page edge, then drop it to search or navigate without revealing the address bar.
+A small Manifest V3 extension for Vivaldi's UI Auto-hide mode. Drag selected text, a link, or a plain URL to the page edge, then choose this tab, a new tab, or hold Cancel without revealing the address bar.
 
 The extension is localized for English, Traditional Chinese, Simplified Chinese, Japanese, and Korean.
 
@@ -17,9 +17,9 @@ Chrome Web Store: https://chromewebstore.google.com/detail/vivaldi-drag-search/f
 
 ## Use
 
-- Drag selected text to the configured page edge and drop it to search.
-- Drag a URL or link to the configured page edge and drop it to navigate.
-- Hold `Ctrl`, `Shift`, or `Command` while dropping to open in a new tab.
+- Drag selected text to the configured page edge, then drop it on `This tab` or `New tab` to search.
+- Drag a URL or link to the configured page edge, then choose whether it opens in the current tab or a new tab.
+- Hold `Cancel` for 1 second to close the page-edge target, then drop the same dragged text or URL into the page normally.
 - Click the extension action and open options to choose the top edge, bottom edge, or both.
 
 The extension first tries the Chromium `chrome.search` API, so searches should use your browser's default search provider. If that API is unavailable in Vivaldi, it falls back to the configured search URL template.
